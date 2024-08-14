@@ -9,26 +9,23 @@ body {
     margin: 0;
     overflow: hidden;
 }
-
 .register-link {
     display: block;
-    margin: 20px auto 0; /* Отступы сверху и по бокам для центрирования */
-    padding: 12px 20px; /* Внутренние отступы для увеличения размера кнопки */
-    color: #fff; /* Цвет текста */
-    background-color: #007BFF; /* Синий цвет фона */
-    border-radius: 8px; /* Закругленные края */
+    margin: 20px auto 0; 
+    padding: 12px 20px; 
+    color: #fff; 
+    background-color: #007BFF; 
+    border-radius: 8px; 
     text-align: center;
-    text-decoration: none; /* Убираем подчеркивание */
-    font-size: 16px; /* Размер шрифта */
-    max-width: 100%; /* Ограничиваем ширину кнопки */
-    transition: background-color 0.3s ease; /* Анимация смены цвета фона */
+    text-decoration: none; 
+    font-size: 16px; 
+    max-width: 100%; 
+    transition: background-color 0.3s ease; 
 }
-
 .register-link:hover {
-    background-color: #0056b3; /* Более темный синий цвет при наведении */
-    text-decoration: underline; /* Подчеркивание при наведении */
+    background-color: #0056b3; 
+    text-decoration: underline; 
 }
-
 .registration-container {
     display: flex;
     background: rgba(255, 255, 255, 0.9);
@@ -38,7 +35,6 @@ body {
     width: 100%;
     backdrop-filter: blur(10px);
 }
-
 .side-panel {
     background: linear-gradient(to bottom right, #6a11cb, #2575fc);
     border-top-left-radius: 12px;
@@ -52,16 +48,13 @@ body {
     align-items: center;
     text-align: center;
 }
-
 .side-panel h3 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-
 .side-panel p {
     font-size: 16px;
 }
-
 .form-container {
     padding: 40px;
     flex: 1;
@@ -72,19 +65,16 @@ body {
     margin-bottom: 20px;
     font-size: 28px;
 }
-
 .form-group {
     margin-bottom: 20px;
     text-align: left;
 }
-
 .form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
 }
-
 .form-group input {
     width: 100%;
     padding: 12px;
@@ -94,12 +84,10 @@ body {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8);
 }
-
 .form-group input:focus {
     border-color: #007BFF;
     outline: none;
 }
-
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -110,14 +98,12 @@ body {
     cursor: pointer;
     margin-top: 20px;
     background: linear-gradient(to right, #6a11cb, #2575fc);
-    transition: transform 1.0s ease; /* Увеличиваем длительность процесса перехода до 1.0 секунд */
-    transform-origin: center; /* Устанавливаем центр увеличения */
+    transition: transform 1.0s ease; 
+    transform-origin: center; 
 }
-
 .submit-btn:hover {
-    transform: scale(1.05); /* Увеличение кнопки при наведении */
+    transform: scale(1.05); 
 }
-
 .login-link {
     display: block;
     margin-top: 20px;
@@ -126,38 +112,28 @@ body {
     font-size: 14px;
     text-align: center;
 }
-/* Пример медиазапроса для мобильных устройств */
 @media (max-width: 768px) {
     .registration-container {
-        flex-direction: column; /* Меняем направление расположения на колонку для маленьких экранов */
-    }
-
+        flex-direction: column; 
     .side-panel {
-        border-radius: 12px 12px 0 0; /* Изменяем скругления */
-        padding: 20px; /* Уменьшаем отступы для маленьких экранов */
+        border-radius: 12px 12px 0 0; 
+        padding: 20px; 
     }
-
     .form-container {
         padding: 20px;
     }
-
     .form-container h2 {
-        font-size: 24px; /* Уменьшаем размер шрифта для заголовков */
+        font-size: 24px;
     }
 }
-
-
 .login-link:hover {
     text-decoration: underline;
 }
-
 .error-message {
     color: red;
     font-size: 14px;
     margin-top: 10px;
 }
-
-/* Стили для баннера согласия на куки */
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -173,13 +149,11 @@ body {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Стили для контейнера кнопок */
+
 .cookie-buttons {
     display: flex;
-    gap: 10px; /* Отступ между кнопками */
+    gap: 10px; 
 }
-
-/* Стили для кнопок */
 .cookie-btn {
     background-color: #007BFF;
     border: none;
@@ -190,7 +164,7 @@ body {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-
 .cookie-btn:hover {
     background-color: #0056b3;
+}
 }
