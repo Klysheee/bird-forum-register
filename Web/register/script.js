@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const cookieBanner = document.getElementById('cookie-banner');
     
-    // Временно отключаем проверку куки
     cookieBanner.style.display = 'flex';
 
-    // Оставляем остальной код без изменений
     const acceptCookiesBtn = document.getElementById('accept-cookies');
     const declineCookiesBtn = document.getElementById('decline-cookies');
 
