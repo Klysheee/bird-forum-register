@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://img1.akspic.ru/attachments/crops/1/5/1/9/39151/39151-voda-yurij-sinij_cvet-nebo-den-1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.register-link {
+    display: block;
+    margin: 20px auto 0; /* Отступы сверху и по бокам для центрирования */
+    padding: 12px 20px; /* Внутренние отступы для увеличения размера кнопки */
+    color: #fff; /* Цвет текста */
+    background-color: #007BFF; /* Синий цвет фона */
+    border-radius: 8px; /* Закругленные края */
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px; /* Размер шрифта */
+    max-width: 100%; /* Ограничиваем ширину кнопки */
+    transition: background-color 0.3s ease; /* Анимация смены цвета фона */
+}
+
+.register-link:hover {
+    background-color: #0056b3; /* Более темный синий цвет при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.registration-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.side-panel {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 40px;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.side-panel h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.side-panel p {
+    font-size: 16px;
+}
+
+.form-container {
+    padding: 40px;
+    flex: 1;
+}
+
+.form-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    transition: transform 1.0s ease; /* Увеличиваем длительность процесса перехода до 1.0 секунд */
+    transform-origin: center; /* Устанавливаем центр увеличения */
+}
+
+.submit-btn:hover {
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.login-link {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+/* Пример медиазапроса для мобильных устройств */
+@media (max-width: 768px) {
+    .registration-container {
+        flex-direction: column; /* Меняем направление расположения на колонку для маленьких экранов */
+    }
+
+    .side-panel {
+        border-radius: 12px 12px 0 0; /* Изменяем скругления */
+        padding: 20px; /* Уменьшаем отступы для маленьких экранов */
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 24px; /* Уменьшаем размер шрифта для заголовков */
+    }
+}
+
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Стили для баннера согласия на куки */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для контейнера кнопок */
+.cookie-buttons {
+    display: flex;
+    gap: 10px; /* Отступ между кнопками */
+}
+
+/* Стили для кнопок */
+.cookie-btn {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-btn:hover {
+    background-color: #0056b3;
+}

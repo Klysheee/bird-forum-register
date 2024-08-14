@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird forum</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> <!-- Подключаем внешний JS-файл -->
+</head>
+<body>
+    <div class="registration-container">
+        <div class="side-panel">
+            <h3>Добро пожаловать!</h3>
+            <p>Зарегистрируйтесь, чтобы воспользоваться нашим сервисом.</p>
+        </div>
+        <div class="form-container">
+            <h2>Здравйствуйте!</h2>
+            <div class="form-group">
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button id="submit-btn" class="submit-btn">Вход</button>
+            <p id="error-message" class="error-message"></p> <!-- Элемент для сообщений об ошибках -->
+            <a href="\register\registration.html" class="register-link">Нет аккаунта? Давайте создадим!</a>
+        </div>
+    </div>
+
+    <!-- Баннер согласия на куки -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Мы используем куки для улучшения работы нашего сайта. Вы согласны на их использование?</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="cookie-btn">Согласиться</button>
+            <button id="decline-cookies" class="cookie-btn">Отклонить</button>
+        </div>
+    </div>
+</body>
+</html>

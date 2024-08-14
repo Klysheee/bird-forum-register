@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://bogatyr.club/uploads/posts/2021-11/1636932543_55-bogatyr-club-p-fon-ptitsi-55.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.registration-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Убираем подъем при наведении */
+.registration-card:hover {
+    transform: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: linear-gradient(90deg, #007BFF 0%, #00BFFF 100%);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #0056b3 0%, #0093c4 100%);
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.3);
+}
